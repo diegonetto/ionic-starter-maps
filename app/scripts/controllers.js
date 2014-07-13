@@ -8,7 +8,7 @@ angular.module('<%= appName %>.controllers', [])
   };
 
   $scope.centerOnMe = function () {
-    console.log("Centering");
+    console.log('Centering');
     if (!$scope.map) {
       return;
     }

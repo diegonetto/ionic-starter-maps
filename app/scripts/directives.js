@@ -28,5 +28,5 @@ angular.module('<%= appName %>.directives', [])
 
       google.maps.event.addDomListener(window, 'load', initialize);
     }
-  }
+  };
 });
