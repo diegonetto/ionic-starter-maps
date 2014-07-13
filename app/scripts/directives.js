@@ -1,4 +1,6 @@
-angular.module('starter.directives', [])
+'use strict';
+
+angular.module('<%= appName %>.directives', [])
 
 .directive('map', function() {
   return {

@@ -1,4 +1,6 @@
-angular.module('starter.controllers', [])
+'use strict';
+
+angular.module('<%= appName %>.controllers', [])
 
 .controller('MapCtrl', function($scope, $ionicLoading) {
   $scope.mapCreated = function(map) {
