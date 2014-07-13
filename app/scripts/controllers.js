@@ -13,7 +13,7 @@ angular.module('<%= appName %>.controllers', [])
       return;
     }
 
-    $scope.loading = $ionicLoading.show({
+    $ionicLoading.show({
       content: 'Getting current location...',
       showBackdrop: false
     });
@@ -21,7 +21,7 @@ angular.module('<%= appName %>.controllers', [])
     navigator.geolocation.getCurrentPosition(function (pos) {
       console.log('Got pos', pos);
       $scope.map.setCenter(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
-      $scope.loading.hide();
+      $ionicLoading.hide();
     }, function (error) {
       alert('Unable to get location: ' + error.message);
     });
