@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('<%= appName %>', ['ionic', '<%= appName %>.controllers', '<%= appName %>.directives'])
+angular.module('<%= appName %>', ['ionic', 'config', '<%= appName %>.controllers', '<%= appName %>.directives'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
